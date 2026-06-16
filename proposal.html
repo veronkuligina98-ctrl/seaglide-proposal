@@ -649,6 +649,35 @@ body{
   .hook p{font-size:12px;}
   .rub-text{font-size:12px;}
   .acard{padding:16px 18px;}
+  /* таблица — горизонтальный скролл */
+  .hl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .hl-table{min-width:520px;}
+  .hl-table td:first-child{width:auto;min-width:100px;}
+  /* скрыть nav-links на мобиле */
+  .nav-links{display:none;}
+  /* hero stat числа меньше */
+  .hero-stat-num{font-size:24px;min-width:50px;}
+  .hero-stat{padding:14px 12px;gap:12px;}
+  /* roadmap */
+  .rm-left{min-width:0;}
+  /* wasis телефон */
+  .was-phone{max-width:200px;}
+  /* posts-grid — 2 колонки */
+  .posts-grid{grid-template-columns:repeat(2,1fr);}
+  /* CTA кнопка */
+  .cta-btn{padding:14px 36px;font-size:13px;}
+  /* убрать горизонтальный overflow */
+  body{overflow-x:hidden;}
+}
+
+@media(max-width:380px){
+  .hero-h1{font-size:22px;}
+  .sec-title{font-size:20px;}
+  .hero-stat-num{font-size:20px;}
+  .about-name{font-size:28px;}
+  .met-n{font-size:36px;}
+  .cta-title{font-size:22px;}
+  .hero-right{grid-template-columns:1fr;}
 }
 </style>
 
