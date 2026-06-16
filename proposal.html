@@ -609,7 +609,23 @@ body{
   .hero-right{grid-template-columns:1fr 1fr;}
 }
 
+@media(max-width:900px){
+  /* уменьшаем zoom на постах при сужении экрана */
+  .post-ph > div[style*="zoom"]{zoom:1.8 !important;}
+}
+
 @media(max-width:600px){
+  /* карточки постов — фиксированная ширина, горизонтальный скролл */
+  .posts-grid{
+    grid-template-columns:repeat(3,110px) !important;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:8px;
+    gap:3px;
+  }
+  /* zoom текстовых оверлеев под 110px карточку */
+  .post-ph > div[style*="zoom"]{zoom:0.85 !important;}
+
   .nav,.wrap,.hero,.cta-sec,.footer{padding-left:16px;padding-right:16px;}
   .sec{padding:52px 0;}
   .hero{min-height:auto;padding-top:48px;padding-bottom:48px;}
